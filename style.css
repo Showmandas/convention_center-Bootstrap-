@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+
+:root{
+    --primary-color:#fff;
+    --seconddary-color:#3F87F5;
+    --txt-color: #231D4F;
+    --txt-color-2:#848199;
+    --plan-btn:#F496D1;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.carousel-item > img{
+    width: 100%;
+height: 500px;
+}
+
+/* moment section style  */
+.moment-section{
+    width: 100%;
+}
+
+#explore-btn{
+    width: 230px;
+    height: 44px;
+    background-color: var(--seconddary-color);
+    color: var(--primary-color);
+}
+
+
+
+/* package section style  */
+.package-section{
+    margin-top: 60px;
+    margin-bottom: 60px;
+    width: 100%;
+}
+.package-section >h1{
+    text-align: center;
+    margin-bottom: 150px;
+}
+.package-section row h1{
+    
+    font-weight: 700;
+font-size: 36px;
+color:var(--txt-color);
+}
+
+.package-section row h2{
+    font-weight: 700;
+font-size: 28px;
+color: var(--txt-color);
+}
+
+.package-section row p{
+    color: var(--txt-color-2);
+    font-weight: 400;
+font-size: 15px;
+margin-bottom: 24px;
+}
+ul li{
+    font-weight: 400;
+font-size: 15px;
+color: var(--txt-color-2);
+list-style: none;
+}
+ul{
+    margin-bottom: 24px;
+}
+ul li::before{
+    content: '✓';
+}
+
+#plan-btn{
+    width: 207px;
+height: 45px;
+background-color: var(--plan-btn);
+border-radius: 1.25rem;
+font-weight: 700;
+font-size: 15px;
+border: 0;
+color: var(--seconddary-color) !important;
+mix-blend-mode:normal;
+opacity: 0.1;
+
+}
+
+.row .plan:hover{
+    width: 280px;
+height: 380px;
+padding: 20px;
+box-shadow: 0px 42px 34px rgba(63, 135, 245, 0.25);
+border-radius: 26px;
+    background-color: var(--seconddary-color);
+    color: var(--primary-color);
+    transform: scale(1);
+
+}
+
+
+/* client section style  */
+
+.client-section{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.client .card{
+    width: 360px;
+    height: 323px;
+}
+.card{
+    box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.13);
+    border:none;
+}
+.card-text{
+    width: 253px;
+height: 104px;
+font-weight: 400;
+font-size: 16px;
+color: var(--txt-color-2);
+}
+.card-body h5{
+    color: #0C1920;
+}
+.card img{
+    width: 100px;
+height: 100px;
+}
+
+
+/* faq section style  */
+.faq-section{
+    width: 100%;
+    margin-bottom: 200px;
+}
+
+#accordion{
+    width: 552px;
+height: 500px;
+/* background-color: #3F87F5; */
+}
+.accordion-body{
+    color: var(--txt-color-2);
+    font-weight: 400;
+font-size: 16px;
+}
+.accordion-button{
+    font-weight: 500;
+font-size: 20px;
+}
+
+/* mobile responsive */
+@media screen and (max-width:576px){
+    .carousel-item>img{
+        width: 100%;
+        
+    }
+    .moment-section img{
+        width: 100%;
+    }
+
+    .plan-section row .plan{
+        text-align: center;
+    }
+    .client{
+        padding: 0;
+    }
+    .client .card{
+        width: 100%;
+    }
+    .card .card-text{
+        width: 100%;
+    }
+    #accordion{
+        width: 100%;
+    }
+
+}
